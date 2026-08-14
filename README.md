@@ -31,3 +31,21 @@ This project involves:
 * **Data Sources:** CRM and ERP CSV Datasets
 
  Raw CSV data from CRM and ERP source systems is ingested, cleansed, and modeled inside a MySQL relational database server on macOS using MySQL Workbench.
+
+---
+ sql-data-warehouse-project/
+├── scripts/
+│   ├── 00_init_database.sql           # Database & Schema Setup
+│   ├── 01_eda_data_profiling.sql      # Pre-load Exploration & Quality Audits
+│   ├── 02_ddl_bronze.sql              # Raw Schema Tables (CRM & ERP)
+│   ├── 03_proc_load_bronze.sql        # Bulk Ingestion Stored Procedure
+│   ├── 04_quality_checks_bronze.sql   # Post-ingestion Raw Counts & Audits
+│   ├── 05_ddl_silver.sql              # Cleaned Schema Tables
+│   ├── 06_proc_load_silver.sql        # Transformation Stored Procedure
+│   ├── 07_quality_checks_silver.sql   # Data Quality & Constraint Validations
+│   ├── 08_ddl_gold.sql                # Star Schema Dimensional Views
+│   ├── 09_quality_checks_gold.sql     # Referential Integrity & BI Checks
+│   └── 10_analytics_reporting.sql    # Business KPIs & Ad-hoc Queries
+└── datasets/
+    ├── source_crm/                   # cust_info, prd_info, sales_details
+    └── source_erp/                   # CUST_AZ12, LOC_A101, PX_CAT_G1V2
