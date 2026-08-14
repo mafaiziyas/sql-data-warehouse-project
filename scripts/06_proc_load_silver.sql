@@ -180,3 +180,5 @@ DELIMITER ;
 
 -- Run it (after bronze.load_bronze()):
 -- CALL silver.load_silver();
+bronze.load_bronze()
+CALL silver.load_silver();
