@@ -54,7 +54,7 @@ sql-data-warehouse-project/
 ├── scripts/
 │   ├── 00_init_database.sql          # Database & Schema Setup
 │   ├── 01_ddl_bronze.sql             # Raw Schema Tables (CRM & ERP)
-│   ├── 02_proc_load_bronze.sql       # Bulk Ingestion Stored Procedure
+│   ├── 02_load_bronze.sql       # Bulk Ingestion Stored Procedure
 │   ├── 03_quality_checks_bronze.sql  # Post-ingestion Raw Counts & Audits
 │   ├── 04_eda_data_profiling.sql     # Pre-load Exploration & Quality Audits
 │   ├── 05_ddl_silver.sql             # Cleaned Schema Tables
