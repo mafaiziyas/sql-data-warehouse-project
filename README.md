@@ -53,10 +53,10 @@ sql-data-warehouse-project/
 │   └── placeholder.txt
 ├── scripts/
 │   ├── 00_init_database.sql          # Database & Schema Setup
-│   ├── 01_eda_data_profiling.sql     # Pre-load Exploration & Quality Audits
-│   ├── 02_ddl_bronze.sql             # Raw Schema Tables (CRM & ERP)
-│   ├── 03_proc_load_bronze.sql       # Bulk Ingestion Stored Procedure
-│   ├── 04_quality_checks_bronze.sql  # Post-ingestion Raw Counts & Audits
+│   ├── 01_ddl_bronze.sql             # Raw Schema Tables (CRM & ERP)
+│   ├── 02_proc_load_bronze.sql       # Bulk Ingestion Stored Procedure
+│   ├── 03_quality_checks_bronze.sql  # Post-ingestion Raw Counts & Audits
+│   ├── 04_eda_data_profiling.sql     # Pre-load Exploration & Quality Audits
 │   ├── 05_ddl_silver.sql             # Cleaned Schema Tables
 │   ├── 06_proc_load_silver.sql       # Transformation Stored Procedure
 │   ├── 07_quality_checks_silver.sql  # Data Quality & Constraint Validations
